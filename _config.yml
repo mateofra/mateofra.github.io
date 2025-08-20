@@ -31,7 +31,6 @@ github_username:  mateofra
 # Build settings
 theme: minima
 plugins:
-  - jekyll-remote-theme 
   - jekyll-feed
 
 # Exclude from processing.
