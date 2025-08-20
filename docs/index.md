@@ -1,7 +1,8 @@
 ---
-layout: home
+layout: page
+title: Home
 ---
 
 # Welcome!
 
-This is my site. Here’s some content on the home page.
+This is my static homepage with some content.
