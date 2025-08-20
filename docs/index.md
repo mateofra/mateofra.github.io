@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Home
+title: Test
 ---
 
-Welcome to my site!
+<h1>Testing</h1>
+<p>If you see this, markdown and theme are working.</p>
