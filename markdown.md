@@ -33,10 +33,12 @@ Sigue la cita en otro parágrafo
 3. Continua
 	1. Igual
 	2.
-			1. aa
+		1. aa
 			2. bb
-- - -
-* * *
+- - -  
+
+* * *  
+
 ___ 
 Línea ↑
 ~~~
@@ -48,7 +50,7 @@ _También_
 **Negrita**  
 __Lo Mismo__  
 ***Combinación***  
-[Google](https://www.google.com)  
+[Google](https://www.google.com)   
 Esto es `Código`... creo  
     Codigo?  
 Una imagen!!
