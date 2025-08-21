@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Markdown"
-permalink: /markdown
 ---
 ## Hola ## 
 Esto es texto normal.  
