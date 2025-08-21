@@ -52,5 +52,5 @@ __Lo Mismo__
 Esto es `Código`... creo  
     Codigo?  
 Una imagen!!
-![Imagen](/home/mateo/Imaxes/im_stuff/shape.png "Colores")
+![Imagen](/img/panda.jpg "Colores")
 \\\*-__-*/
