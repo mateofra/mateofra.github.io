@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
 <html lang="en"><head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,7 +43,7 @@
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <h1>Testing</h1>
+        <h1>Hola</h1>
 <p>If you see this, markdown and theme are working.</p>
 
       </div>
@@ -62,6 +69,7 @@
     </div>
 
   </div>
+    
 
 </footer>
 </body>
