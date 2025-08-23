@@ -14,4 +14,4 @@ Hoy, a apenas dos semanas de volver a la rutina universitaria (aunque este año 
 
 <!-- Aquí puedes seguir escribiendo y los elementos volverán a su comportamiento normal -->
 
-[Volver al blog](../blog.md)
+[Volver al Inicio](../index.md)
