@@ -24,7 +24,10 @@ Aquí subiré "artículos", como si de un diario se tratase. ↴
     {% if file.path contains '/music/' and file.extname == '.mp3' %}
       <li class="music-track">
         <div class="player-container">
-          <a class="song-title blink" href="{{ site.baseurl }}{{ file.path }}">♬ {{ file.basename }} ♬</a>
+          <div style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-bottom: 5px;">
+            <a class="song-title blink" href="{{ site.baseurl }}{{ file.path }}" style="margin-bottom: 0;">♬ {{ file.basename }} ♬</a>
+            <a href="https://soundcloud.com/cheese-76336542/cheese_dentro_de_ti" target="_blank" style="color: #FF6600; font-weight: bold; text-shadow: 1px 1px #000; font-size: 0.9em; text-decoration: none;">[SoundCloud]</a>
+          </div>
           <audio controls class="retro-audio">
             <source src="{{ site.baseurl }}{{ file.path }}" type="audio/mpeg">
             Tu navegador no soporta el audio.
