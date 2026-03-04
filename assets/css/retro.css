@@ -82,7 +82,9 @@ a:hover {
   background-color: #FFFFCC;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Comic Sans MS", "Comic Sans", cursive;
   color: #FF0000;
   text-shadow: 2px 2px #0000FF;
@@ -110,8 +112,15 @@ hr {
 }
 
 @keyframes blink-animation {
-  0%, 100% { visibility: visible; }
-  50% { visibility: hidden; }
+
+  0%,
+  100% {
+    visibility: visible;
+  }
+
+  50% {
+    visibility: hidden;
+  }
 }
 
 .under-construction {
@@ -225,7 +234,8 @@ blockquote {
   color: #000080;
 }
 
-code, pre {
+code,
+pre {
   background-color: #000000;
   color: #00FF00;
   font-family: "Courier New", monospace;
@@ -240,4 +250,57 @@ code, pre {
   font-size: 0.8em;
   text-align: center;
   color: #333333;
+}
+
+/* Music Player Styles */
+.music-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.music-track {
+  background-color: #000000;
+  border: 3px inset #666666;
+  padding: 10px;
+  width: fit-content;
+  box-shadow: 4px 4px 0 #FF00FF;
+}
+
+.player-container {
+  text-align: center;
+}
+
+.song-title {
+  color: #00FF00 !important;
+  font-family: "Courier New", monospace;
+  font-size: 1.1em;
+  text-decoration: none;
+  text-shadow: 1px 1px #000080;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.song-title:hover {
+  color: #FFFF00 !important;
+  text-decoration: underline;
+}
+
+.retro-audio {
+  border: 4px ridge #FF00FF;
+  background-color: #000080;
+  border-radius: 0;
+  height: 40px;
+  width: 280px;
+}
+
+.retro-audio::-webkit-media-controls-panel {
+  background-color: #FFFFCC;
+  border-radius: 0;
+}
+
+.retro-audio::-webkit-media-controls-enclosure {
+  border-radius: 0;
 }

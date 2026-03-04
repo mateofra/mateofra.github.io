@@ -6,8 +6,7 @@ title: Test
 ## Bienvenid@ a mi pagina en la Web  
 Me llamo Mateo (como la URL indica) y estudio inteligencia artificial en la USC.  
 
-![Dancing Baby](/img/dancing_baby.gif) 
-![Alien Dance](/img/alien.gif)
+![Alien Glow](/img/alien.gif)
 ![Under Construction](/img/construction.gif)
 
 Aquí subiré "artículos", como si de un diario se tratase. ↴  
@@ -20,16 +19,17 @@ Aquí subiré "artículos", como si de un diario se tratase. ↴
 </ul>
 
 ## Música
-<ul>
+<ul class="music-list">
   {% for file in site.static_files %}
     {% if file.path contains '/music/' and file.extname == '.mp3' %}
-      <li>
-        <audio controls>
-          <source src="{{ site.baseurl }}{{ file.path }}" type="audio/mpeg">
-          Tu navegador no soporta el audio.
-        </audio>
-        <br>
-        <a href="{{ site.baseurl }}{{ file.path }}">{{ file.basename }}</a>
+      <li class="music-track">
+        <div class="player-container">
+          <a class="song-title blink" href="{{ site.baseurl }}{{ file.path }}">♬ {{ file.basename }} ♬</a>
+          <audio controls class="retro-audio">
+            <source src="{{ site.baseurl }}{{ file.path }}" type="audio/mpeg">
+            Tu navegador no soporta el audio.
+          </audio>
+        </div>
       </li>
     {% endif %}
   {% endfor %}
