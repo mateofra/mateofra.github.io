@@ -1,0 +1,227 @@
+/* 90s Retro Style CSS */
+
+body {
+  background-color: #00FFFF;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Ccircle cx='2' cy='2' r='2' fill='%23FF00FF' opacity='0.3'/%3E%3C/svg%3E");
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: #000080;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #FF0000;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+a:visited {
+  color: #800080;
+}
+
+a:hover {
+  color: #FF6600;
+  text-decoration: none;
+}
+
+.site-wrapper {
+  width: 800px;
+  margin: 0 auto;
+  background-color: #FFFFCC;
+  border: 5px ridge #FF00FF;
+  padding: 10px;
+}
+
+.site-header {
+  background-color: #000080;
+  color: #FFFF00;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 5px solid #FF00FF;
+}
+
+.site-title {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #FFFF00 !important;
+  text-shadow: 3px 3px #FF0000, -1px -1px #00FF00;
+  text-decoration: none !important;
+}
+
+.site-nav {
+  margin-top: 10px;
+}
+
+.site-nav a {
+  color: #00FF00 !important;
+  font-size: 1.2em;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 1px 1px #FF0000;
+}
+
+.site-nav a:hover {
+  color: #FFFF00 !important;
+  text-decoration: underline;
+}
+
+.marquee-wrapper {
+  background-color: #FF00FF;
+  color: #FFFF00;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 5px 0;
+  border-top: 3px dashed #000080;
+  border-bottom: 3px dashed #000080;
+}
+
+.page-content {
+  padding: 20px;
+  background-color: #FFFFCC;
+}
+
+h1, h2, h3 {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: #FF0000;
+  text-shadow: 2px 2px #0000FF;
+}
+
+h1 {
+  font-size: 2em;
+  color: #000080;
+  text-decoration: underline;
+}
+
+h2 {
+  font-size: 1.6em;
+  color: #CC0000;
+}
+
+hr {
+  border: none;
+  height: 4px;
+  background: linear-gradient(to right, #FF0000, #FF7700, #FFFF00, #00FF00, #0000FF, #FF00FF);
+}
+
+.blink {
+  animation: blink-animation 1s step-end infinite;
+}
+
+@keyframes blink-animation {
+  0%, 100% { visibility: visible; }
+  50% { visibility: hidden; }
+}
+
+.under-construction {
+  background-color: #FFFF00;
+  border: 3px dashed #FF0000;
+  padding: 8px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1em;
+  margin: 10px 0;
+  color: #000000;
+}
+
+.visitor-counter {
+  background-color: #000000;
+  color: #00FF00;
+  font-family: "Courier New", monospace;
+  font-size: 1.2em;
+  padding: 5px 15px;
+  border: 3px inset #666666;
+  display: inline-block;
+  letter-spacing: 3px;
+}
+
+.site-footer {
+  background-color: #000080;
+  color: #FFFFFF;
+  padding: 15px;
+  text-align: center;
+  border-top: 5px solid #FF00FF;
+  font-size: 0.9em;
+}
+
+.site-footer a {
+  color: #00FF00 !important;
+}
+
+.site-footer h2 {
+  color: #FFFF00;
+  text-shadow: 1px 1px #FF0000;
+  font-size: 1.2em;
+}
+
+.footer-col-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-list li {
+  padding: 5px 0;
+  border-bottom: 1px dashed #FF00FF;
+}
+
+.post-list li::before {
+  content: "★ ";
+  color: #FF0000;
+}
+
+.post-meta {
+  color: #666666;
+  font-size: 0.85em;
+}
+
+.rainbow-text {
+  background: linear-gradient(to right, #FF0000, #FF7700, #FFFF00, #00FF00, #0000FF, #FF00FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.stars {
+  color: #FF0000;
+  font-size: 1.5em;
+}
+
+img {
+  border: 3px ridge #FF00FF;
+}
+
+blockquote {
+  background-color: #E0E0FF;
+  border-left: 5px solid #0000FF;
+  border-right: 5px solid #FF00FF;
+  padding: 10px;
+  font-style: italic;
+  color: #000080;
+}
+
+code, pre {
+  background-color: #000000;
+  color: #00FF00;
+  font-family: "Courier New", monospace;
+  padding: 2px 5px;
+  border: 1px solid #00FF00;
+}
+
+.best-viewed {
+  background-color: #CCCCCC;
+  border: 2px inset #999999;
+  padding: 5px;
+  font-size: 0.8em;
+  text-align: center;
+  color: #333333;
+}
