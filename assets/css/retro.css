@@ -158,8 +158,24 @@ hr {
 .footer-col-wrapper {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 50px;
   flex-wrap: wrap;
+  text-align: left;
+}
+
+.site-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-footer li {
+  margin-bottom: 5px;
+}
+
+.site-footer svg {
+  fill: #FFFFFF;
+  vertical-align: middle;
 }
 
 .post-list {

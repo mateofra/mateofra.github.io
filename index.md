@@ -6,8 +6,9 @@ title: Test
 ## Bienvenid@ a mi pagina en la Web  
 Me llamo Mateo (como la URL indica) y estudio inteligencia artificial en la USC.  
 
-![Cat typing](/img/cat_typing.gif) 
-![Hackerman](/img/hackerman.gif)
+![Dancing Baby](/img/dancing_baby.gif) 
+![Alien Dance](/img/alien.gif)
+![Under Construction](/img/construction.gif)
 
 Aquí subiré "artículos", como si de un diario se tratase. ↴  
 <ul>
