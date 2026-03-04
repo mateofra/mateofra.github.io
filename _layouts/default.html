@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  <link rel="stylesheet" href="{{ "/assets/css/retro.css" | relative_url }}">
+  <link type="application/atom+xml" rel="alternate" href="{{ "/feed.xml" | relative_url }}" title="{{ site.title | escape }}">
+</head>
+<body>
+
+  <div class="site-wrapper">
+
+    <header class="site-header" role="banner">
+      <div>
+        <span class="stars">★★★</span>
+        <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+        <span class="stars">★★★</span>
+      </div>
+      <nav class="site-nav">
+        {%- for path in site.header_pages -%}
+          {%- assign my_page = site.pages | where: "path", path | first -%}
+          {%- if my_page.title -%}
+          <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+          {%- endif -%}
+        {%- else -%}
+          {%- for my_page in site.pages -%}
+            {%- if my_page.title -%}
+            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endfor -%}
+      </nav>
+    </header>
+
+    <div class="marquee-wrapper">
+      <marquee behavior="scroll" direction="left">
+        ★ ¡Bienvenido a mi página web! ★ &nbsp;&nbsp;&nbsp;
+        ★ Welcome to the Information Superhighway! ★ &nbsp;&nbsp;&nbsp;
+        ★ Best viewed in 800x600 resolution ★ &nbsp;&nbsp;&nbsp;
+        ★ Netscape Navigator 4.0 recommended ★ &nbsp;&nbsp;&nbsp;
+        ★ ¡Esta página está en construcción! ★
+      </marquee>
+    </div>
+
+    <hr>
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+
+    <hr>
+
+    <div class="under-construction">
+      🚧 <span class="blink">⚠️ PÁGINA EN CONSTRUCCIÓN ⚠️</span> 🚧
+      <br>
+      <small>Esta página se actualiza constantemente. ¡Vuelve pronto!</small>
+    </div>
+
+    <div style="text-align: center; padding: 10px;">
+      <span>Visitas: </span>
+      <span class="visitor-counter">001337</span>
+      <br><br>
+      <div class="best-viewed">
+        🖥️ Esta página se ve mejor con Netscape Navigator 4.0 en resolución 800×600 | IE 5.0 compatible
+      </div>
+    </div>
+
+    <footer class="site-footer h-card">
+      <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+      <div class="wrapper">
+        <h2 class="footer-heading">{{ site.title | escape }}</h2>
+
+        <div class="footer-col-wrapper">
+          <div class="footer-col footer-col-1">
+            <ul class="contact-list">
+              <li class="p-name">
+                {%- if site.author -%}
+                  {{ site.author | escape }}
+                {%- else -%}
+                  {{ site.title | escape }}
+                {%- endif -%}
+              </li>
+              {%- if site.email -%}
+              <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+              {%- endif -%}
+            </ul>
+          </div>
+
+          <div class="footer-col footer-col-2">
+            {%- include social.html -%}
+          </div>
+
+          <div class="footer-col footer-col-3">
+            <p>{{ site.description | escape }}</p>
+            <p style="margin-top: 10px; font-size: 0.8em; color: #AAAAAA;">
+              &copy; {{ site.time | date: "%Y" }} {{ site.title | escape }} &mdash;
+              Hecho con ❤️ y <a href="https://jekyllrb.com" style="color: #00FF00 !important;">Jekyll</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </footer>
+
+  </div>
+
+</body>
+</html>
